@@ -23,7 +23,7 @@ def main():
                 st.error(f"Ошибка при чтении файла: {e}")
                 return
     else:
-        data = pd.read_csv('temperature_data.csv')
+        data = pd.read_csv('service/temperature_data.csv')
 
     if data is not None:
         # Параллельное или последовательное выполнение
